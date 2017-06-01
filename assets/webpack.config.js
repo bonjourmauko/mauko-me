@@ -4,16 +4,18 @@ module.exports = {
     entry: './elm/index.js',
     output: {
         path: resolve('../priv/static/js'),
-        filename: 'bundle.js'
+        filename: 'app.js'
     },
     resolve: {
         modules: [
             resolve('./elm'),
+            resolve('elm-stuff'),
             resolve('node_modules')
         ],
         extensions: ['.js', '.elm']
     },
     module: {
+        noParse: /\.elm$/,
         rules: [{
             test: /\.elm$/,
             exclude: [/elm-stuff/, /node_modules/],
@@ -25,12 +27,15 @@ module.exports = {
                     warn: true
                 }
             }
-        }],
-
-        noParse: /\.elm$/
-    },
-   devServer: {
-      inline: true,
-      stats: 'errors-only'
+        }, {
+            test: /\.js$/,
+            exclude: [/elm-stuff/, /node_modules/],
+            use: {
+                loader: 'babel-loader',
+                options: {
+                    presets: ['es2017']
+                }
+            }
+        }]
     }
 };

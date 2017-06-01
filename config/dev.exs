@@ -11,16 +11,17 @@ config :mauko_me, MaukoMe.Web.Endpoint,
   debug_errors: true,
   code_reloader: true,
   check_origin: false,
-  watchers: []
+  watchers: ["npm": ["run", "--prefix", "assets", "watch"]]
 
 # Watch static and templates for browser reloading.
 config :mauko_me, MaukoMe.Web.Endpoint,
   live_reload: [
+    url: "ws://127.0.0.1:5000",
     patterns: [
       ~r{priv/static/.*(js|css|png|jpeg|jpg|gif|svg)$},
       ~r{priv/gettext/.*(po)$},
-      ~r{lib/web/views/.*(ex)$},
-      ~r{lib/web/templates/.*(eex)$}
+      ~r{lib/mauko_me/web/views/.*(ex)$},
+      ~r{lib/mauko_me/web/templates/.*(eex)$}
     ]
   ]
 
