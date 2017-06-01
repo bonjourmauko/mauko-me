@@ -1,4 +1,4 @@
-defmodule MaukoWWW.ChannelCase do
+defmodule MaukoMe.Web.ChannelCase do
   @moduledoc """
   This module defines the test case to be used by
   channel tests.
@@ -22,7 +22,7 @@ defmodule MaukoWWW.ChannelCase do
 
 
       # The default endpoint for testing
-      @endpoint MaukoWWW.Endpoint
+      @endpoint MaukoMe.Web.Endpoint
     end
   end
 

@@ -1,3 +1,3 @@
-defmodule MaukoWWW.LayoutViewTest do
-  use MaukoWWW.ConnCase, async: true
+defmodule MaukoMe.LayoutViewTest do
+  use MaukoMe.Web.ConnCase, async: true
 end

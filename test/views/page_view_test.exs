@@ -1,3 +1,3 @@
-defmodule MaukoWWW.PageViewTest do
-  use MaukoWWW.ConnCase, async: true
+defmodule MaukoMe.PageViewTest do
+  use MaukoMe.Web.ConnCase, async: true
 end

@@ -1,4 +1,4 @@
-defmodule MaukoWWW.ConnCase do
+defmodule MaukoMe.Web.ConnCase do
   @moduledoc """
   This module defines the test case to be used by
   tests that require setting up a connection.
@@ -20,10 +20,10 @@ defmodule MaukoWWW.ConnCase do
       # Import conveniences for testing with connections
       use Phoenix.ConnTest
 
-      import MaukoWWW.Router.Helpers
+      import MaukoMe.Web.Router.Helpers
 
       # The default endpoint for testing
-      @endpoint MaukoWWW.Endpoint
+      @endpoint MaukoMe.Web.Endpoint
     end
   end
 

@@ -1,5 +1,5 @@
-defmodule MaukoWWW.PageControllerTest do
-  use MaukoWWW.ConnCase
+defmodule MaukoMe.PageControllerTest do
+  use MaukoMe.Web.ConnCase
 
   test "GET /", %{conn: conn} do
     conn = get conn, "/"

@@ -6,11 +6,11 @@
 use Mix.Config
 
 # Configures the endpoint
-config :mauko_www, MaukoWWW.Endpoint,
-  url: [host: "localhost"],
+config :mauko_me, MaukoMe.Web.Endpoint,
+  url: [host: "127.0.0.1"],
   secret_key_base: "jvF2ogDIP6upMYCRGRoRz1vqg3vjHwQ1hXVALrMdmwQTeJIuDtUZsghSQdKelsQd",
-  render_errors: [view: MaukoWWW.ErrorView, accepts: ~w(html json)],
-  pubsub: [name: MaukoWWW.PubSub,
+  render_errors: [view: MaukoMe.Web.ErrorView, accepts: ~w(html json)],
+  pubsub: [name: MaukoMe.Web.PubSub,
            adapter: Phoenix.PubSub.PG2]
 
 # Configures Elixir's Logger
