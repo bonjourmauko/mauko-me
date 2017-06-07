@@ -7,17 +7,14 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Hello MaukoMe!</title>
-    <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">
+    <title>Mauko Quiroga</title>
+    <link rel="stylesheet" media="all" href="<%= static_path(@conn, "/css/app.css") %>">
   </head>
 
   <body>
-    <div class="container">
-      <main role="main">
-        <%= render @view_module, @view_template, assigns %>
-      </main>
-
-    </div> <!-- /container -->
+    <main role="main">
+      <%= render(@view_module, @view_template, assigns) %>
+    </main>
     <script src="<%= static_path(@conn, "/js/app.js") %>"></script>
   </body>
 </html>
