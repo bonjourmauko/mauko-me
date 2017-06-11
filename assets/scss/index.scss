@@ -1,0 +1,39 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section {
+  line-height: calc(2em - .25vw);
+  text-align: left;
+}
+
+h1 {
+  font-size: calc(8vw + 2em);
+  margin-left: -.065em;
+}
+
+h2 {
+  font-size: calc(.5vw + 1em);
+}
+
+p {
+  font-size: calc(.25vw + .75em);
+}
+
