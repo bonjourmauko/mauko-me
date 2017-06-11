@@ -8,4 +8,4 @@ rules:
   placeholder-in-extend: 0
   quotes:
     - 1
-    - style: double
+    - style: single

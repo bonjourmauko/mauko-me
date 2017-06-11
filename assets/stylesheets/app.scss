@@ -1,10 +1,15 @@
+@import '~normalize.css';
+
+$black: hsl(0, 0%, 10%);
+$red:   hsl(0, 100%, 50%);
+
 html,
 body {
   height: 100%;
 }
 
 body {
-  margin: 0;
+  font-family: 'Hurme-No3', sans-serif;
 }
 
 main {
@@ -12,13 +17,17 @@ main {
   display: flex;
   height: 100%;
   justify-content: center;
-  margin: 0;
-  padding: 0;
 }
 
 section {
   line-height: calc(2em - .25vw);
   text-align: left;
+}
+
+h1,
+h2,
+p {
+  color: $black;
 }
 
 h1 {
@@ -27,6 +36,7 @@ h1 {
 }
 
 h2 {
+  color: $red;
   font-size: calc(.5vw + 1em);
 }
 

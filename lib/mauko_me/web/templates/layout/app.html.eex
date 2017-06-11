@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="I'm Mauko Quiroga and I build things.">
+    <meta name="author" content="Mauko Quiroga">
 
     <title>Mauko Quiroga</title>
     <link rel="stylesheet" media="all" href="<%= static_path(@conn, "/css/app.css") %>">

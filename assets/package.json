@@ -6,6 +6,9 @@
     "errors": "webpack --display-error-details"
   },
   "dependencies": {
+    "normalize.css": "^7.0.0"
+  },
+  "devDependencies": {
     "babel-core": "^7.0.0-alpha.12",
     "babel-loader": "^7.0.0",
     "babel-preset-es2017": "^7.0.0-alpha.12",

@@ -4,8 +4,11 @@ import Html exposing (..)
 
 -- MAIN
 
+main : Html String
 main =
     view
+
+-- VIEW
 
 view : Html String
 view =
