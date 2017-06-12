@@ -28,7 +28,7 @@ module.exports = {
                 loader: 'elm-webpack-loader',
                 options: {
                     cwd: __dirname,
-                    debug: true,
+                    debug: false,
                     warn: true
                 }
             }
